@@ -1,0 +1,17 @@
+---
+import {Icon} from 'astro-icon/components';
+import navData from '../data/navData.js'
+---
+
+<nav class=" w-full" aria-label="Primary">
+  <div class="max-w-6xl mx-auto border border-red-400 px-4 py-8 flex items-center justify-between">
+    <a href="/" class="logomark", aria-label="Go home">
+      <Icon width={60} name="logomark" />
+    </a>
+    <ul class="flex justify-between">
+      {navData.map((item) => (
+      <a class="px-2" href={item.path}>{item.name}</a>
+      ))}
+    </ul>
+  </div>
+</nav>

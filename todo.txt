@@ -1,0 +1,23 @@
+zach.dev todo:
+
+Tailwind Documentation
+  - Colorschemes
+  - Core Concepts
+
+Design blog homepage
+  - navbar in the middle up top
+  - create unique link highlight animation
+  - simple text at top of body
+
+  - consider making youtube channel for guitar content
+
+  - recent blog posts table
+
+  - add links for Email
+                  RSS
+                  Twitter
+                  Github
+                  LinkedIn
+
+
+look into public notes with obsidian?
