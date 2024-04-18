@@ -18,10 +18,36 @@ const isVisible = false;
 		<meta name="generator" content={Astro.generator} />
 		<title>zach.dev</title>
 	</head>
-	<body>
+	<body class="mocha bg-base font-mono">
     
-    <MainLayout title="my home page" description="random">
-      <h1>Welcome to my blog!</h1>
+    <MainLayout  title="my home page" >
+      <section class="py-2 text-rosewater min-h-40 max-w-4xl mx-auto text-white flex flex-col items-center justify-between">
+        <div class="py-4 w-full">
+          <h1 class="font-bold text-5xl py-4">Hey! I'm Zach. Welcome to my blog!</h1>
+          <h4 class="text-lavender text-lg"><i>CS Student, Web Developer, Vim Enthusiast, Guitar Player</i></h4>
+        </div>
+        <div class="w-full py-4">
+          <h3 class="py-2 font-bold text-3xl">Recent Posts:</h3>
+          <p>blog 1</p>
+          <p>blog 2</p>
+          <p>blog 3</p>
+          <p>blog 4</p>
+          <p>blog 5</p>
+        </div>
+        <div class="w-full py-4">
+          <h3 class="py-2 font-bold text-3xl">About Me:</h3>
+          <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique autem laboriosam repellat velit suscipit dignissimos, eaque, quas vero veniam, minima voluptate molestias? Placeat quo sequi doloremque voluptate, sint voluptas quidem?</p>
+        </div>
+        <div class="w-full py-4">
+          <h3 class="py-2 text-3xl">Around the web:</h3>
+          <ul>
+            <li><p>twitter</p></li>
+            <li><p>github</p></li>
+            <li><p>linkedin</p></li>
+            <li><p>zachmclean.xyz</p></li>
+          </ul>
+        </div>
+      </section>
     </MainLayout>
 	</body>
 </html>

@@ -3,10 +3,12 @@ import MainLayout from './MainLayout.astro'
 
 const { frontmatter } = Astro.props;
 console.log(frontmatter);
+
+const {title, description, date, category, author, image} = frontmatter;
 ---
 
-<MainLayout title="Blog Page" description='All Blogs'>
-  <header>
+<MainLayout title="Blog Page">
+  <header class="">
     <div class="">
       <!--  Container-->
     </div>
