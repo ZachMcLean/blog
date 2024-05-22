@@ -3,18 +3,15 @@ import {Icon} from 'astro-icon/components';
 import navData from '../data/navData.js'
 ---
 
-<nav class="mocha w-full" aria-label="Primary">
-  <div class="bg-base text-pink max-w-6xl mx-auto px-2 py-8 flex items-center justify-around">
-    <!-- <a href="/" class="logomark", aria-label="Go home"> -->
-    <!--   <Icon width={60} name="logomark" /> -->
-    <!-- </a> -->
-    <a href="/" class=" text-red font-bold font-mono">
-      <h3 class="text-xl"><i>zachmclean.dev</i></h3>
+<nav class="flex items-center justify-between py-10 font-sans" aria-label="Primary">
+  <div>
+    <a aria-label="Zach McLean" href="/" class="font-semibold">
+      <div class="hidden h-6 font-semibold sm:block text-2xl">Zach McLean</div>
     </a>
-    <ul class="text-red font-mono font-bold flex justify-between">
-      {navData.map((item) => (
-      <a class="px-2" href={item.path}>{item.name}</a>
-      ))}
-    </ul>
+  </div>
+  <div class="flex items-center leading-5 space-x-4 sm:space-x-6">
+    {navData.map((item) => (
+    <a class="hidden sm:block font-medium font-semibold text-green hover:text-mauve" href={item.path}>{item.name}</a>
+    ))}
   </div>
 </nav>

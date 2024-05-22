@@ -16,13 +16,17 @@ const {
 } = Astro.props as Props
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <MainHead {title} />
-    <body class="bg-base text-pink font-mono">
-    <Nav/>
-      <main>
-        <slot>default value</slot> 
-      </main>
-    <Footer/>
+	<body class="mocha bg-crust text-text antialiased font-sans">
+    <section class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+      <div class="flex h-screen flex-col justify-between">
+        <Nav/>
+          <main class="mb-auto">
+            <slot>default value</slot> 
+          </main>
+        <Footer/>
+      </div>
+    </section>
 	</body>
 </html>

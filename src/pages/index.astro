@@ -1,45 +1,46 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-const str = 'Zach'
-const age = 25
-const me = {
-  name: str,
-  age: age,
-  favorites: ["Coding", "Guitar", "Lauren"]
-}
-const isVisible = false;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>zach.dev</title>
-	</head>
-	<body class="mocha bg-base font-mono">
+<!-- <html lang="en" class="scroll-smooth"> -->
+	<!-- <head> -->
+	<!-- 	<meta charset="utf-8" /> -->
+	<!-- 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+	<!-- 	<meta name="viewport" content="width=device-width" /> -->
+	<!-- 	<meta name="generator" content={Astro.generator} /> -->
+	<!-- 	<title>zach.dev</title> -->
+	<!-- </head> -->
+	<!-- <body class="mocha bg-crust text-text font-mono antialiased"> -->
     
-    <MainLayout  title="my home page" >
-      <section class="py-2 text-rosewater min-h-40 max-w-4xl mx-auto text-white flex flex-col items-center justify-between">
-        <div class="py-4 w-full">
-          <h1 class="font-bold text-5xl py-4">Hey! I'm Zach. Welcome to my blog!</h1>
-          <h4 class="text-lavender text-lg"><i>CS Student, Web Developer, Vim Enthusiast, Guitar Player</i></h4>
+    <MainLayout  title="Zach McLean" >
+      <div class="divide-y divide-gray-200">
+        <div class="space-y-2 pb-8 pt-6 md:space-y-5">
+          <h1 class="font-extrabold text-lavender text-3xl 
+                     leading-9 tracking-tight sm:text-4xl 
+                     sm:leading-10 md:leading-14 md:text-6xl"
+            >Latest
+          </h1>
+          <!-- <h4 class="text-lg"><i>CS Student, Web Developer, Vim Enthusiast, Guitar Player</i></h4> -->
+          <p class="text-lg leading-7 text-text">
+            My personal site, mostly a blog of my random thoughts.
+            RSS feed available
+            <a href="/" class="font-bold text-green hover:text-teal">here.</a>
+            Shorter posts written on 
+            <a href="/" class="font-bold text-green hover:text-teal">Mastodon.</a>
+          </p>
         </div>
-        <div class="w-full py-4">
-          <h3 class="py-2 font-bold text-3xl">Recent Posts:</h3>
+        <div class="">
+          <h3 class="font-bold text-3xl">Recent Posts:</h3>
+
           <p>blog 1</p>
           <p>blog 2</p>
           <p>blog 3</p>
           <p>blog 4</p>
           <p>blog 5</p>
+
         </div>
-        <div class="w-full py-4">
-          <h3 class="py-2 font-bold text-3xl">About Me:</h3>
-          <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique autem laboriosam repellat velit suscipit dignissimos, eaque, quas vero veniam, minima voluptate molestias? Placeat quo sequi doloremque voluptate, sint voluptas quidem?</p>
-        </div>
-        <div class="w-full py-4">
-          <h3 class="py-2 text-3xl">Around the web:</h3>
+        <div class="">
+          <h3 class="text-3xl">Around the web:</h3>
           <ul>
             <li><p>twitter</p></li>
             <li><p>github</p></li>
@@ -47,7 +48,7 @@ const isVisible = false;
             <li><p>zachmclean.xyz</p></li>
           </ul>
         </div>
-      </section>
+      </div>
     </MainLayout>
-	</body>
-</html>
+	<!-- </body> -->
+<!-- </html> -->
